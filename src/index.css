@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic&display=swap');
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Noto Naskh Arabic', serif;}
+/* 
+body {
+  margin: 0;
+  background-color: #3f3f3f;
+} */
+
+.tisch {
+  background-color: burlywood;
+}
+
+.book {
+  height: 100%;
+}
+/* .turn {
+  margin: 0 auto; 
+  
+} */
+
