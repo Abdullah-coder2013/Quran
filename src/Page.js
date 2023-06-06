@@ -1,5 +1,20 @@
 import Ayah from "./Ayah";
+import Cover from "./Cover";
 function Page(props) {
+    if (props.pg < -1 || props.pg > 603) {
+        return (
+            <div>
+                <p>Empty Page Input / Page doesn't exist in book</p>
+            </div>
+        )
+    }
+    else if (props.pg === -1) {
+        return (
+            <div>
+                <Cover />
+            </div>
+        )
+    }
     const page = require("./models/page-" + props.pg);
     const generateAyahs = () => {
         return page.map((item, index) => {

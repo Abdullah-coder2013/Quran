@@ -16,6 +16,7 @@ body {
 
 .tisch {
   background-color: burlywood;
+  background-image: url("../public/images/bg.jpg");
 }
 
 .book {
@@ -25,4 +26,11 @@ body {
   margin: 0 auto; 
   
 } */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+.cover {
+  height: 913px;
+}
 

@@ -1,9 +1,8 @@
 import { useState } from "react";
 import Book from "./Book";
 import TurnPage from "./TurnPage";
-import Cover from "./Cover";
 const BookCover = () => {
-    const [pg, setPg] = useState(0);
+    const [pg, setPg] = useState(-1);
 
     // const chooseWhichPge = (event) => {
     //   if (event.target.value <= -1) {
@@ -18,15 +17,15 @@ const BookCover = () => {
     
     return (
     <div className="tisch h-full flex justify-center relative">
-        <div className="mt-[450px]">        
+        <div className="mt-[450px] max-md:hidden">        
           <TurnPage turnPage={"turn"} setPg={setPg} pg={pg}/>
         </div>
-        <div className="book bg-orange-900 w-1/2 p-5 rounded-xl border-4 border-amber-950">
+        <div className="book bg-orange-900 w-1/2 p-5 rounded-xl shadow-lg border-4 border-amber-950">
           
-          <Book pg={pg} />
+          <Book pg={pg} setPg={setPg}/>
           
         </div>
-        <div className="mt-[450px]">        
+        <div className="mt-[450px] max-md:hidden">        
           <TurnPage turnPage={"back"} setPg={setPg} pg={pg}/>
         </div>
     </div>
