@@ -4,7 +4,7 @@ function Page(props) {
     if (props.pg < -1 || props.pg > 603) {
         return (
             <div>
-                <p>Empty Page Input / Page doesn't exist in book</p>
+                <p>Some Error occured!</p>
             </div>
         )
     }
@@ -18,7 +18,7 @@ function Page(props) {
     const page = require("./models/page-" + props.pg);
     const generateAyahs = () => {
         return page.map((item, index) => {
-            return <><p>{page[index][0]}</p><Ayah page={page} index={index} /></>;
+            return <Ayah page={page} index={index} number={page[index][0]}/>;
         });
     }
     // const ayahs = page.map((item) => {
@@ -26,7 +26,7 @@ function Page(props) {
     // });
    
     return (
-        <div>
+        <div className="transition ease-in-out duration-300">
             {generateAyahs()}
         </div>
     )

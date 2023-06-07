@@ -5,6 +5,12 @@ function Book(props) {
     //     bookmark = pg;
     //     console.log(bookmark);
     // }
+    const search = (event) => {
+        if (event.key === "Enter") {
+            props.setPg(event.target.value-1)
+            event.target.value = null;
+        }
+    }
     if (props.pg === -1){
         return (
             <div>
@@ -14,8 +20,10 @@ function Book(props) {
     }
     return (
         <div className="w-full items-center bg-slate-300 text-5xl text-right p-4 rounded border-4 border-slate-400 shadow-lg">
-            <div className="flex justify-center">            
-                <input type="number" className="w-1/6 p-2 border-0 outline-0 bg-slate-300 text-red-600" name="submit" onChange={e => props.setPg(e.target.value-1)} placeholder="Page Number"/>
+            
+            <div className="flex flex-start justify-center">            
+                <input type="number" className="w-1/6 p-2 border-0 outline-0 bg-slate-300 text-green-700" name="submit" onKeyDown={e => search(e)} placeholder="Page:"/>
+                <input className="w-1/6 p-2 border-0 outline-0 bg-slate-300 text-green-700" type="text" value={props.pg+1} readOnly/>
             </div>
 
             <Page pg={props.pg} />

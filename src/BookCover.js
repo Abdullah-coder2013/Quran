@@ -17,7 +17,7 @@ const BookCover = () => {
     
     return (
     <div className="tisch h-full flex justify-center relative">
-        <div className="mt-[450px] max-md:hidden">        
+        <div className="mt-[450px] max-xl:hidden">        
           <TurnPage turnPage={"turn"} setPg={setPg} pg={pg}/>
         </div>
         <div className="book bg-orange-900 w-1/2 p-5 rounded-xl shadow-lg border-4 border-amber-950">
@@ -25,7 +25,7 @@ const BookCover = () => {
           <Book pg={pg} setPg={setPg}/>
           
         </div>
-        <div className="mt-[450px] max-md:hidden">        
+        <div className="mt-[450px] max-xl:hidden">        
           <TurnPage turnPage={"back"} setPg={setPg} pg={pg}/>
         </div>
     </div>
