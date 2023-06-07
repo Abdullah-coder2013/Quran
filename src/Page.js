@@ -26,7 +26,7 @@ function Page(props) {
     // });
    
     return (
-        <div className="transition ease-in-out duration-300">
+        <div className="transition ease-in-out duration-300 ayah p-90 tracking-wide leading-loose">
             {generateAyahs()}
         </div>
     )
