@@ -19,7 +19,7 @@ const Ayah = (props) => {
             <>
                 <hr className="headAyahTop"/>
                 <div className="flex justify-center">
-                    <p className=" font-semibold text-5xl max-lg:text-xl">❁ () {entryArray.join(" ")} ❁</p>
+                    <p className=" font-semibold text-5xl max-lg:text-2xl">❁ () {entryArray.join(" ")} ❁</p>
                 </div>
                 <hr className="headAyahBottom"/>
                 <span>{generateFirstAyah()}</span>
