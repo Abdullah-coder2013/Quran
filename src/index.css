@@ -6,8 +6,13 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: "IndoPak";
+  src: url("../public/fonts/font.ttf") format("truetype");
+}
+
 html {
-  font-family: 'Noto Naskh Arabic', serif;}
+  }
 /* 
 body {
   margin: 0;
@@ -21,6 +26,9 @@ body {
 
 .book {
   height: 100%;
+}
+.ayahs {
+  font-family: "IndoPak", sans-serif;
 }
 /* .turn {
   margin: 0 auto; 
@@ -46,4 +54,7 @@ input::-webkit-inner-spin-button {
   background-color: #e8cc9c;
   color: #0000;
 } */
+.wideletters {
+  letter-spacing: 0.009rem;
+}
 
