@@ -57,4 +57,12 @@ input::-webkit-inner-spin-button {
 .wideletters {
   letter-spacing: 0.009rem;
 }
+.headAyahTop {
+  border-top: 3px solid black;
+  margin-bottom: 15px;
+}
+.headAyahBottom {
+  border-top: 3px solid black;
+  margin-top: 15px;
+}
 
