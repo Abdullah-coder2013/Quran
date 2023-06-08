@@ -30,8 +30,8 @@ function Book(props) {
         <div className="w-full items-center bg-slate-300 text-5xl max-lg:text-3xl text-right p-4 pb-8 rounded border-4 border-slate-400 shadow-lg">
             
             <div className="flex flex-start justify-center">            
-                <input type="number" className="w-1/6 p-2 border-0 outline-0 bg-slate-300 text-green-700" name="submit" onKeyDown={e => search(e)} placeholder="Page:"/>
-                <input className="w-1/6 p-2 border-0 outline-0 bg-slate-300 text-green-700" type="text" value={props.pg+1} readOnly/>
+                <input type="number" className="w-1/3 p-2 border-0 outline-0 bg-slate-300 text-green-700" name="submit" onKeyDown={e => search(e)} placeholder="Search"/>
+                <input className="w-1/3 p-2 border-0 outline-0 bg-slate-300 text-green-700" type="text" value={props.pg+1} readOnly/>
             </div>
 
             <Page pg={props.pg} />

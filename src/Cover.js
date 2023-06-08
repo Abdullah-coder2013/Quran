@@ -3,7 +3,7 @@ const Cover = (props) => {
         return props.setPg(0);
     }
     return (
-        <div className="cover bg-orange-900 p-5 rounded-xl shadow-lg flex justify-center flex-col h-3/4 border-4 border-amber-950">
+        <div className="cover bg-green-900 p-5 rounded-xl shadow-lg flex justify-center flex-col h-3/4 border-4 border-green-950">
             <h1 className="title text-9xl max-lg:text-8xl text-center font-bold text-yellow-300">Quran</h1>
             <h5 className="text-center text-xl text-yellow-500 border-slate-900">Website made by Abdullah</h5><br/>
             <h5 className="text-center text-xl text-yellow-700">Text from Alquran API</h5>

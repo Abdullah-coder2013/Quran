@@ -20,7 +20,7 @@ const BookCover = () => {
         <div className="mt-[450px] max-xl:hidden">        
           <TurnPage turnPage={"turn"} setPg={setPg} pg={pg}/>
         </div>
-        <div className="book bg-orange-900 w-1/2 max-lg:w-full p-5 rounded-xl shadow-lg border-4 border-amber-950">
+        <div className="book bg-green-900 w-1/2 max-lg:w-full p-5 rounded-xl shadow-lg border-4 border-green-950">
           
           <Book pg={pg} setPg={setPg}/>
           
