@@ -1,7 +1,7 @@
 import Ayah from "./Ayah";
 import Cover from "./Cover";
 function Page(props) {
-    if (props.pg < -1 || props.pg > 603) {
+    if (props.pg < -1 || props.pg > 605) {
         return (
             <div>
                 <p>Some Error occured!</p>
@@ -15,7 +15,7 @@ function Page(props) {
             </div>
         )
     }
-    const page = require("./models/page-" + props.pg);
+    const page = require("../models/page-" + props.pg);
     let arrayayahs = [];
     const generateAyahs = () => {
         return page.map((item, index) => {

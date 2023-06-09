@@ -9,7 +9,7 @@ function Book(props) {
     // }
     const search = (event) => {
         if (event.key === "Enter") {
-            if (event.target.value < -1 || event.target.value > 604) {
+            if (event.target.value <= -1 || event.target.value > 605) {
                 swal("Page Not Found!", "This page does not exist.");
                 event.target.value = null;
             }

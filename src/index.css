@@ -63,3 +63,10 @@ input::-webkit-inner-spin-button {
   margin-top: 15px;
 }
 
+.turnm {
+  margin-right: 50rem;
+}
+.backm {
+  margin-left: 50rem;
+}
+

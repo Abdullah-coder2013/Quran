@@ -1,5 +1,5 @@
 const Ayah = (props) => {
-    if (props.page[props.index][1].includes("بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ")) {
+    if (props.page[props.index][1].includes("بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ")) {
         let entryString = props.page[props.index][1];
         let entryArray = entryString.split(" ");
         let letter = entryArray.splice(3 + 1, entryArray.length - (3 + 1) );
@@ -17,7 +17,11 @@ const Ayah = (props) => {
         }
         return (
             <>
-                <hr className="headAyahTop"/>
+                <hr className="headAyahTop" />
+                <div className="flex justify-center">
+                    <p className="font-bold text-5xl max-lg:text-2xl">❁ {props.page[props.index][2]} ❁</p>
+                </div>
+                <hr className="headAyahTop headAyahBottom"/>
                 <div className="flex justify-center">
                     <p className=" font-semibold text-5xl max-lg:text-2xl">❁ {entryArray.join(" ")} ❁</p>
                 </div>

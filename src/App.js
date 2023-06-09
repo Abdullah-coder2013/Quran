@@ -1,4 +1,4 @@
-import BookCover from "./BookCover";
+import BookCover from "./components/BookCover";
 function App() {
   return (
       <BookCover />
