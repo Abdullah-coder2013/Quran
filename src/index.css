@@ -26,6 +26,7 @@ body {
 }
 .ayahs {
   font-family: "IndoPak", sans-serif;
+  direction: rtl;
 }
 /* .turn {
   margin: 0 auto; 
@@ -68,5 +69,8 @@ input::-webkit-inner-spin-button {
 }
 .backm {
   margin-left: 50rem;
+}
+.number {
+  font-family: "IndoPak", sans-serif;
 }
 

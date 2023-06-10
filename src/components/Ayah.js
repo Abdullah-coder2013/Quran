@@ -1,4 +1,5 @@
 const Ayah = (props) => {
+    
     if (props.page[props.index][1].includes("بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ")) {
         let entryString = props.page[props.index][1];
         let entryArray = entryString.split(" ");
@@ -12,7 +13,7 @@ const Ayah = (props) => {
                 return "";
             }
             else {
-                return <span>{letterstogether} (<span className="text-3xl max-lg:text-lg">1</span>)</span>;
+                return <> <span>{letterstogether} </span> <span dangerouslySetInnerHTML={{__html: "<span>&#62720;</span>"}}></span> </>;
             }
         }
         return (
@@ -23,7 +24,7 @@ const Ayah = (props) => {
                 </div>
                 <hr className="headAyahTop headAyahBottom"/>
                 <div className="flex justify-center">
-                    <p className=" font-semibold text-5xl max-lg:text-2xl">❁ {entryArray.join(" ")} ❁</p>
+                    <p className=" font-semibold text-5xl max-lg:text-2xl">❁ {entryArray.join(" ")} ۝ ❁</p>
                 </div>
                 <hr className="headAyahBottom"/>
                 <span>{generateFirstAyah()}</span>
@@ -31,8 +32,10 @@ const Ayah = (props) => {
         )
     }
     return (
-        // <p className="ayah p-90 tracking-wide leading-loose">({props.number}) {props.page[props.index][1]}</p>
-        <span>{props.page[props.index][1]} (<span className="text-3xl max-lg:text-lg">{props.number}</span>) </span>
+        <>
+        <span> {props.page[props.index][1]} </span>
+        <span dangerouslySetInnerHTML={{__html: `<span>&#${62719 + props.number};</span>`}}></span>
+        </>
     );
 }
 export default Ayah;
