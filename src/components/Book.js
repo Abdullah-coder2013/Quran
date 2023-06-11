@@ -1,5 +1,6 @@
 import Page from "./Page";
 import Cover from "./Cover";
+import TableOfContents from "./tableOfContents/TableOfContents";
 // import Popup from "./Popup";
 import swal from 'sweetalert'
 function Book(props) {
@@ -9,7 +10,7 @@ function Book(props) {
     // }
     const search = (event) => {
         if (event.key === "Enter") {
-            if (event.target.value <= -1 || event.target.value > 605) {
+            if (event.target.value <= -2 || event.target.value > 605) {
                 swal("Page Not Found!", "This page does not exist.");
                 event.target.value = null;
             }
@@ -19,10 +20,19 @@ function Book(props) {
             }
         }
     }
-    if (props.pg === -1){
+    if (props.pg === -2){
         return (
             <div>
                 <Cover setPg={props.setPg}/>
+            </div>
+        )
+    }
+    if (props.pg === -1){
+        return (
+            <div className="w-full items-center bg-slate-300 text-5xl max-lg:text-3xl text-right p-4 pb-8 rounded border-4 border-slate-400 shadow-lg">
+                <div>
+                    <TableOfContents setPg={props.setPg}/>
+                </div>
             </div>
         )
     }

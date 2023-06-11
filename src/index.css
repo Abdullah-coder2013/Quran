@@ -73,4 +73,21 @@ input::-webkit-inner-spin-button {
 .number {
   font-family: "IndoPak", sans-serif;
 }
+.surah {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: xx-large;
+}
 
+.contents {
+  direction: center;
+  margin : 0 auto;
+  display: flex;
+  justify-content: center;
+}
+.content {
+  direction: center;
+  margin : 0 auto;
+}
+.mobile {
+  margin-top: 50vh;
+}

@@ -20,7 +20,7 @@ const Ayah = (props) => {
             <>
                 <hr className="headAyahTop" />
                 <div className="flex justify-center">
-                    <p className="font-bold text-5xl max-lg:text-2xl">❁ {props.page[props.index][2]} ❁</p>
+                    <p className="font-bold text-5xl max-lg:text-2xl surah">❁ {props.page[props.index][2]} ❁</p>
                 </div>
                 <hr className="headAyahTop headAyahBottom"/>
                 <div className="flex justify-center">
