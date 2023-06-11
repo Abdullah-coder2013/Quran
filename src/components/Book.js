@@ -1,6 +1,7 @@
 import Page from "./Page";
 import Cover from "./Cover";
 import TableOfContents from "./tableOfContents/TableOfContents";
+import Info from "./Info";
 // import Popup from "./Popup";
 import swal from 'sweetalert'
 function Book(props) {
@@ -32,6 +33,15 @@ function Book(props) {
             <div className="w-full items-center bg-slate-300 text-5xl max-lg:text-3xl text-right p-4 pb-8 rounded border-4 border-slate-400 shadow-lg">
                 <div>
                     <TableOfContents setPg={props.setPg}/>
+                </div>
+            </div>
+        )
+    }
+    if (props.pg === -3){
+        return (
+            <div className="w-full items-center bg-slate-300 text-5xl max-lg:text-3xl text-right p-4 pb-8 rounded border-4 border-slate-400 shadow-lg">
+                <div>
+                    <Info/>
                 </div>
             </div>
         )

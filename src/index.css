@@ -91,3 +91,6 @@ input::-webkit-inner-spin-button {
 .mobile {
   margin-top: 50vh;
 }
+.halfHeight {
+  height: 75vh;
+}

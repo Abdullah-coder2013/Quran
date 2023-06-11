@@ -26,9 +26,25 @@ const BookCover = () => {
             <TurnPage turnPage={"back"} setPg={setPg} pg={pg}/>
           </div>
       </div>
-      <div className="tisch w-full h-48 flex flex-col justify-center items-center">
-        <p className="font-bold text-xl">made by Abdullah.</p>
-        <p>text from Alquran API</p>
+      <div className="tisch w-full halfHeight flex justify-center items-center">
+          {/* <div className="w-1/3 pl-4">
+            <h1 className="text-3xl leading-loose" >Contact</h1>
+            <ul>
+                <li>Email: <a href="mailto:abdullah@munim.net"  className="border-2 border-slate-800 rounded-lg bg-slate-700 text-slate-200 p-1 w-full hover:bg-slate-300 hover:text-slate-800 hover:-translate-y-1 hover:scale-110 transition ease-in-out">abdullah@munim.net</a></li>
+            </ul>
+          </div>
+          <div className="w-1/3 leading-loose pl-4">
+            <h1 className="text-3xl">Profile</h1>
+            <br/>
+            <a href="https://github.com/abdullah-coder2013"  className="border-2 border-slate-800 rounded-lg bg-slate-700 text-slate-200 p-1 w-full hover:bg-slate-300 hover:text-slate-800 hover:-translate-y-1 hover:scale-110 transition ease-in-out">My Github</a>
+            <br/>
+            <br/>
+            <a href="https://www.youtube.com/channel/UCZFemMnfw28mvMRLTOFOUUg"  className="border-2 border-slate-800 rounded-lg bg-slate-700 text-slate-200 p-1 w-full hover:bg-slate-300 hover:text-slate-800 hover:-translate-y-1 hover:scale-110 transition ease-in-out">My Youtube Channel</a>        
+          </div>
+          <div className="w-1/3 leading-loose pl-4">
+            <h1 className="text-3xl">Source <code>Code</code></h1>
+            <a href="https://github.com/abdullah-coder2013/Quran" className="border-2 border-slate-800 rounded-lg bg-slate-700 text-slate-200 p-1 w-full hover:bg-slate-300 hover:text-slate-800 hover:-translate-y-1 hover:scale-110 transition ease-in-out">GitHub</a>          
+          </div> */}
       </div>
     </>
     )

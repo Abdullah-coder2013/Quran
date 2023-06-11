@@ -8,10 +8,10 @@ const TableOfContents = (props) => {
     }
     return (
         <>
-            <h1 className="pb-5 font-bold contents">Table Of Contents</h1>
-            <ol className="surah w-full transition ease-in-out duration-300 ayah p-90 wideletters leading-loose">
+            <h1 className="p-5 font-bold contents">Table Of Contents</h1>
+            <div className="surah flex flex-wrap max-xl:text-lg w-full transition ease-in-out duration-300 ayah p-90 wideletters leading-loose">
                 {genContent()}
-            </ol>
+            </div>
         </>
     )
 }
