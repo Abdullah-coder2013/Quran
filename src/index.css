@@ -94,3 +94,6 @@ input::-webkit-inner-spin-button {
 .halfHeight {
   height: 75vh;
 }
+.ltrs {
+  text-align: ltr;
+}
