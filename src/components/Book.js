@@ -24,7 +24,7 @@ function Book(props) {
     if (props.pg === -2){
         return (
             <div>
-                <Cover setPg={props.setPg}/>
+                <Cover setPg={props.setPg} bookmark={localStorage.getItem("bookmark")}/>
             </div>
         )
     }
@@ -46,12 +46,19 @@ function Book(props) {
             </div>
         )
     }
+    const setBookMark = () => {
+        localStorage.setItem("bookmark", props.pg);
+        swal("Bookmark Added!", "You have successfully added the page as your bookmark.")
+    }
     return (
         <div className="w-full items-center bg-slate-300 text-5xl max-lg:text-3xl text-right p-4 pb-8 rounded border-4 border-slate-400 shadow-lg">
             
-            <div className="flex flex-start justify-center">            
-                <input type="number" className="w-1/3 p-2 border-0 outline-0 bg-slate-300 text-green-700" name="submit" onKeyDown={e => search(e)} placeholder="Search"/>
-                <input className="w-1/3 p-2 border-0 outline-0 bg-slate-300 text-green-700" type="text" value={props.pg+1} readOnly/>
+            <div className="flex flex-start justify-center text-base text-xss">
+                <button onClick={() => props.setPg(-2)} className="w-1/4 p-2 text-left hover:-translate-y-1 hover:scale-110 transition ease-in-out hover:text-green-800 font-bold">Back to Cover</button>          
+                <input type="number" className="w-1/4 p-2 border-0 outline-0 bg-slate-300 text-green-700" name="submit" onKeyDown={e => search(e)} placeholder="Search"/>
+                <input className="w-1/4 p-2 border-0 outline-0 text-center bg-slate-300 text-green-700" type="text" value={props.pg+1} readOnly/>
+                <button className="w-1/4 text-center p-2 hover:-translate-y-1 hover:scale-110 transition ease-in-out hover:text-green-800 font-bold" onClick={() => props.setPg(-1)}>To Table Of Contents</button>          
+                <button onClick={setBookMark} className="w-1/4 p-2 text-right hover:-translate-y-1 hover:scale-110 transition ease-in-out hover:text-green-800 font-bold">Bookmark</button>
             </div>
 
             <Page pg={props.pg} />

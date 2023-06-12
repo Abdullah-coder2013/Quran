@@ -97,3 +97,9 @@ input::-webkit-inner-spin-button {
 .ltrs {
   text-align: ltr;
 }
+@media not all and (min-width: 1280px) {
+  .text-xss {
+      font-size: 10px/* 12px */;
+      line-height: 1rem/* 16px */;
+  }
+}

@@ -1,9 +1,28 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Book from "./Book";
 import TurnPage from "./TurnPage";
 import MobileTurnPage from "./MobileTurn";
 const BookCover = () => {
     const [pg, setPg] = useState(-2);
+    
+    const getStorageData = (keyName, defaultValue) =>{
+      const savedItem = localStorage.getItem(keyName);
+    const parsedItem = JSON.parse(savedItem);
+    return parsedItem || defaultValue;
+    }
+     
+    const useLocalStorage = (keyName, initialValue) => {
+      const [value, setValue] = useState(() => {
+        return getStorageData(keyName, initialValue);
+      });
+       
+    useEffect(() => {
+        localStorage.setItem(keyName, JSON.stringify(value));
+      }, [keyName, value]);
+     
+    return [value, setValue];
+    }
+    
 
     return (
     <>
@@ -16,7 +35,7 @@ const BookCover = () => {
           </div>
           <div className="book bg-green-900 w-1/2 max-lg:w-full p-5 rounded-xl shadow-lg border-4 border-green-950">
             
-            <Book pg={pg} setPg={setPg}/>
+            <Book pg={pg} setPg={setPg} localStorage={useLocalStorage}/>
           
           </div>
           <div className="mobile lg:hidden fixed right-0">        
