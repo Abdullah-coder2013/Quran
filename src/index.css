@@ -18,6 +18,8 @@ body {
 .tisch {
   background-color: burlywood;
   background-image: url("../public/images/image.svg");
+  animation-duration: 4s;
+  animation-name: "transition";
 }
 
 .book {
@@ -26,11 +28,18 @@ body {
 .ayahs {
   font-family: "IndoPak", sans-serif;
   direction: rtl;
-}
-/* .turn {
-  margin: 0 auto; 
   
-} */
+}
+.tran {
+  animation-name: transition;
+  animation-duration: 1.5s;
+  
+}
+@keyframes transition {
+  from {opacity: 0;}
+  to {opacity: 1;}  
+}
+
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
     -webkit-appearance: none;

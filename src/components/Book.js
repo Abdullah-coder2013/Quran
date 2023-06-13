@@ -18,14 +18,14 @@ function Book(props) {
     }
     if (props.pg === -2){
         return (
-            <div>
+            <div className="tran">
                 <Cover setPg={props.setPg} bookmark={localStorage.getItem("bookmark")}/>
             </div>
         )
     }
     if (props.pg === -1){
         return (
-            <div className="w-full items-center bg-slate-300 text-5xl max-lg:text-3xl text-right p-4 pb-8 rounded border-4 border-slate-400 shadow-lg">
+            <div className="tran w-full items-center bg-slate-300 text-5xl max-lg:text-3xl text-right p-4 pb-8 rounded border-4 border-slate-400 shadow-lg">
                 <div>
                     <TableOfContents setPg={props.setPg}/>
                 </div>

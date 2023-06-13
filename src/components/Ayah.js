@@ -33,8 +33,8 @@ const Ayah = (props) => {
     }
     return (
         <>
-        <span> {props.page[props.index][1]} </span>
-        <span dangerouslySetInnerHTML={{__html: `<span>&#${62719 + props.number};</span>`}}></span>
+        <span className="tran"> {props.page[props.index][1]} </span>
+        <span className="tran" dangerouslySetInnerHTML={{__html: `<span>&#${62719 + props.number};</span>`}}></span>
         </>
     );
 }
