@@ -1,7 +1,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic&display=swap');
 * {
   box-sizing: border-box;
 }
@@ -18,7 +17,7 @@ body {
 
 .tisch {
   background-color: burlywood;
-  background-image: url("../public/images/bg.jpg");
+  background-image: url("../public/images/image.svg");
 }
 
 .book {

@@ -21,7 +21,17 @@ function Page(props) {
             return <Ayah page={page} index={index} number={page[index][0]}/>;
         });
     }
-   
+    if (props.pg === 0 || props.pg === 1) {
+        return (
+            <div className="ayahs transition ease-in-out duration-300 ayah p-90 wideletters leading-loose">
+                {generateAyahs()}
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+            </div>
+        )
+    }
     return (
         <div className="ayahs transition ease-in-out duration-300 ayah p-90 wideletters leading-loose">
             {generateAyahs()}

@@ -61,40 +61,14 @@ const BookCover = () => {
           <div className="mobile max-lg:hidden fixed w-1 left-20">        
             <TurnPage turnPage={"turn"} setPg={setPg} pg={pg}/>
           </div>
-          {/* <div className="mobile lg:hidden fixed w-1 left-0">        
-            <MobileTurnPage turnPage={"turn"} setPg={setPg} pg={pg}/>
-          </div> */}
-          <div className="book bg-green-900 w-1/2 max-lg:w-full p-5 rounded-xl shadow-lg border-4 border-green-950" onTouchStart={onTouchStart} onTouchMove={onTouchMove} onTouchEnd={onTouchEnd}>
+          <div className="book bg-green-900 h-screen w-1/2 max-lg:w-full p-5 rounded-xl shadow-lg border-4 border-green-950" onTouchStart={onTouchStart} onTouchMove={onTouchMove} onTouchEnd={onTouchEnd}>
             
             <Book pg={pg} setPg={setPg} localStorage={useLocalStorage}/>
           
           </div>
-          {/* <div className="mobile lg:hidden fixed right-0">        
-            <MobileTurnPage turnPage={"back"} setPg={setPg} pg={pg}/>
-          </div> */}
           <div className="mobile max-lg:hidden fixed right-20">        
             <TurnPage turnPage={"back"} setPg={setPg} pg={pg}/>
           </div>
-      </div>
-      <div className="tisch w-full halfHeight flex justify-center items-center">
-          {/* <div className="w-1/3 pl-4">
-            <h1 className="text-3xl leading-loose" >Contact</h1>
-            <ul>
-                <li>Email: <a href="mailto:abdullah@munim.net"  className="border-2 border-slate-800 rounded-lg bg-slate-700 text-slate-200 p-1 w-full hover:bg-slate-300 hover:text-slate-800 hover:-translate-y-1 hover:scale-110 transition ease-in-out">abdullah@munim.net</a></li>
-            </ul>
-          </div>
-          <div className="w-1/3 leading-loose pl-4">
-            <h1 className="text-3xl">Profile</h1>
-            <br/>
-            <a href="https://github.com/abdullah-coder2013"  className="border-2 border-slate-800 rounded-lg bg-slate-700 text-slate-200 p-1 w-full hover:bg-slate-300 hover:text-slate-800 hover:-translate-y-1 hover:scale-110 transition ease-in-out">My Github</a>
-            <br/>
-            <br/>
-            <a href="https://www.youtube.com/channel/UCZFemMnfw28mvMRLTOFOUUg"  className="border-2 border-slate-800 rounded-lg bg-slate-700 text-slate-200 p-1 w-full hover:bg-slate-300 hover:text-slate-800 hover:-translate-y-1 hover:scale-110 transition ease-in-out">My Youtube Channel</a>        
-          </div>
-          <div className="w-1/3 leading-loose pl-4">
-            <h1 className="text-3xl">Source <code>Code</code></h1>
-            <a href="https://github.com/abdullah-coder2013/Quran" className="border-2 border-slate-800 rounded-lg bg-slate-700 text-slate-200 p-1 w-full hover:bg-slate-300 hover:text-slate-800 hover:-translate-y-1 hover:scale-110 transition ease-in-out">GitHub</a>          
-          </div> */}
       </div>
     </>
     )
