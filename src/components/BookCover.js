@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import Book from "./Book";
 import TurnPage from "./TurnPage";
-import MobileTurnPage from "./MobileTurn";
 const BookCover = () => {
     const [pg, setPg] = useState(-2);
     
@@ -22,6 +21,33 @@ const BookCover = () => {
      
     return [value, setValue];
     }
+
+    const [touchStart, setTouchStart] = useState(null)
+    const [touchEnd, setTouchEnd] = useState(null)
+
+    // the required distance between touchStart and touchEnd to be detected as a swipe
+    const minSwipeDistance = 50 
+
+    const onTouchStart = (e) => {
+      setTouchEnd(null) // otherwise the swipe is fired even with usual touch events
+      setTouchStart(e.targetTouches[0].clientX)
+    }
+
+    const onTouchMove = (e) => setTouchEnd(e.targetTouches[0].clientX)
+
+    const onTouchEnd = () => {
+      if (!touchStart || !touchEnd) return
+      const distance = touchStart - touchEnd
+      const isLeftSwipe = distance > minSwipeDistance
+      const isRightSwipe = distance < -minSwipeDistance
+      if (isLeftSwipe) {
+        setPg(pg - 1)
+      }
+      if (isRightSwipe) {
+        setPg(pg + 1)
+      }
+            // add your conditional logic here
+    }
     
 
     return (
@@ -30,17 +56,17 @@ const BookCover = () => {
           <div className="mobile max-lg:hidden fixed w-1 left-20">        
             <TurnPage turnPage={"turn"} setPg={setPg} pg={pg}/>
           </div>
-          <div className="mobile lg:hidden fixed w-1 left-0">        
+          {/* <div className="mobile lg:hidden fixed w-1 left-0">        
             <MobileTurnPage turnPage={"turn"} setPg={setPg} pg={pg}/>
-          </div>
-          <div className="book bg-green-900 w-1/2 max-lg:w-full p-5 rounded-xl shadow-lg border-4 border-green-950">
+          </div> */}
+          <div className="book bg-green-900 w-1/2 max-lg:w-full p-5 rounded-xl shadow-lg border-4 border-green-950" onTouchStart={onTouchStart} onTouchMove={onTouchMove} onTouchEnd={onTouchEnd}>
             
             <Book pg={pg} setPg={setPg} localStorage={useLocalStorage}/>
           
           </div>
-          <div className="mobile lg:hidden fixed right-0">        
+          {/* <div className="mobile lg:hidden fixed right-0">        
             <MobileTurnPage turnPage={"back"} setPg={setPg} pg={pg}/>
-          </div>
+          </div> */}
           <div className="mobile max-lg:hidden fixed right-20">        
             <TurnPage turnPage={"back"} setPg={setPg} pg={pg}/>
           </div>
