@@ -40,13 +40,18 @@ const BookCover = () => {
       const distance = touchStart - touchEnd
       const isLeftSwipe = distance > minSwipeDistance
       const isRightSwipe = distance < -minSwipeDistance
-      if (isLeftSwipe) {
-        setPg(pg - 1)
+      if (pg >= -2 && pg <= 605){
+        if (isLeftSwipe && pg !== -2) {
+          setPg(pg - 1)
+        }
+        if (isRightSwipe && pg !== 603) {
+          setPg(pg + 1)
+        }
       }
-      if (isRightSwipe) {
-        setPg(pg + 1)
+      else {
+        return
       }
-            // add your conditional logic here
+      
     }
     
 
