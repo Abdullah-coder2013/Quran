@@ -1,5 +1,15 @@
 # Quran Reading Website 📖
 
+
+<img src="/public/images/image.png">
+
+
+## Anouncements 📢
+
+The active github pages will *most likely* not be updated.
+The website has switched to cloudflare pages and will be updated regularly.
+
+Active website is available at: https://read-quran.pages.dev/
 ## About 
 
 This is a website of reading the Quran.
