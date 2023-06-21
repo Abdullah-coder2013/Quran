@@ -111,3 +111,6 @@ input::-webkit-inner-spin-button {
       line-height: 1rem/* 16px */;
   }
 }
+.htmlstyle {
+  background-image: url("../public/images/image.svg");
+}
