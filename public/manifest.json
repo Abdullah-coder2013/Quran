@@ -1,5 +1,12 @@
 {
   "short_name": "Quran",
+  "orientation": "any",
+  "description": "A Website for Reading the Quran.",
+  "dir": "auto",
+  "categories": ["utilities", "books"],
+  "scope": ".",
+  "display": "standalone",
+  "display_override": "window-controls-overlay", 
   "name": "Quran Reading Website",
   "icons": [
     {
@@ -24,7 +31,6 @@
     }
   ],
   "start_url": ".",
-  "display": "standalone",
   "theme_color": "#000000",
   "background_color": "#ffd887"
 }
