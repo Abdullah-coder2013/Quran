@@ -6,9 +6,8 @@ for i in range(604):
         print(page)
         content = []
         for item in page:
-            if "بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ" in item[1] or item[1] == "﻿بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ":
-                with open(f"contents.json", mode="w", encoding="utf-8") as s:
-                    totalcontent.append([item[2], item[3]])
+            if item[0] == 1:
+                totalcontent.append([item[2],item[3]])
 
 
 

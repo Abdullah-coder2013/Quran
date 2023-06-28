@@ -1,35 +1,39 @@
 [
     [
-        "Al-Faatiha",
+        "Al-Fatiha",
         1
     ],
     [
-        "Al-Baqara",
+        "Al-Baqarah",
         2
     ],
     [
-        "Aal-i-Imraan",
+        "Aali Imran",
         50
     ],
     [
-        "An-Nisaa",
+        "An-Nisa",
         77
     ],
     [
-        "Al-Maaida",
+        "Al-Ma'idah",
         106
     ],
     [
-        "Al-An'aam",
+        "Al-An'am",
         128
     ],
     [
-        "Al-A'raaf",
+        "Al-A'raf",
         151
     ],
     [
-        "Al-Anfaal",
+        "Al-Anfal",
         177
+    ],
+    [
+        "At-Tawbah",
+        187
     ],
     [
         "Yunus",
@@ -44,7 +48,7 @@
         235
     ],
     [
-        "Ar-Ra'd",
+        "Ar-Rad",
         249
     ],
     [
@@ -60,7 +64,7 @@
         267
     ],
     [
-        "Al-Israa",
+        "Al-Isra",
         282
     ],
     [
@@ -72,11 +76,11 @@
         305
     ],
     [
-        "Taa-Haa",
+        "Ta-Ha",
         312
     ],
     [
-        "Al-Anbiyaa",
+        "Al-Anbiya",
         322
     ],
     [
@@ -84,19 +88,19 @@
         332
     ],
     [
-        "Al-Muminoon",
+        "Al-Mu'minun",
         342
     ],
     [
-        "An-Noor",
+        "An-Nur",
         350
     ],
     [
-        "Al-Furqaan",
+        "Al-Furqan",
         359
     ],
     [
-        "Ash-Shu'araa",
+        "Ash-Shu'ara",
         367
     ],
     [
@@ -104,19 +108,15 @@
         377
     ],
     [
-        "An-Naml",
-        379
-    ],
-    [
         "Al-Qasas",
         385
     ],
     [
-        "Al-Ankaboot",
+        "Al-Ankabut",
         396
     ],
     [
-        "Ar-Room",
+        "Ar-Rum",
         404
     ],
     [
@@ -124,11 +124,11 @@
         411
     ],
     [
-        "As-Sajda",
+        "As-Sajdah",
         415
     ],
     [
-        "Al-Ahzaab",
+        "Al-Ahzab",
         418
     ],
     [
@@ -136,19 +136,19 @@
         428
     ],
     [
-        "Faatir",
+        "Fatir",
         434
     ],
     [
-        "Yaseen",
+        "Ya-Sin",
         440
     ],
     [
-        "As-Saaffaat",
+        "As-Saffat",
         446
     ],
     [
-        "Saad",
+        "Sad",
         453
     ],
     [
@@ -172,11 +172,11 @@
         489
     ],
     [
-        "Ad-Dukhaan",
+        "Ad-Dukhan",
         496
     ],
     [
-        "Al-Jaathiya",
+        "Al-Jathiyah",
         499
     ],
     [
@@ -192,15 +192,15 @@
         511
     ],
     [
-        "Al-Hujuraat",
+        "Al-Hujurat",
         515
     ],
     [
-        "Qaaf",
+        "Qaf",
         518
     ],
     [
-        "Adh-Dhaariyat",
+        "Adh-Dhariyat",
         520
     ],
     [
@@ -216,11 +216,11 @@
         528
     ],
     [
-        "Ar-Rahmaan",
+        "Ar-Rahman",
         531
     ],
     [
-        "Al-Waaqia",
+        "Al-Waqi'ah",
         534
     ],
     [
@@ -228,7 +228,7 @@
         537
     ],
     [
-        "Al-Mujaadila",
+        "Al-Mujadila",
         542
     ],
     [
@@ -236,7 +236,7 @@
         545
     ],
     [
-        "Al-Mumtahana",
+        "Al-Mumtahanah",
         549
     ],
     [
@@ -244,19 +244,19 @@
         551
     ],
     [
-        "Al-Jumu'a",
+        "Al-Jumu'ah",
         553
     ],
     [
-        "Al-Munaafiqoon",
+        "Al-Munafiqun",
         554
     ],
     [
-        "At-Taghaabun",
+        "At-Taghabun",
         556
     ],
     [
-        "At-Talaaq",
+        "At-Talaq",
         558
     ],
     [
@@ -272,15 +272,15 @@
         564
     ],
     [
-        "Al-Haaqqa",
+        "Al-Haqqah",
         566
     ],
     [
-        "Al-Ma'aarij",
+        "Al-Ma'arij",
         568
     ],
     [
-        "Nooh",
+        "Nuh",
         570
     ],
     [
@@ -292,19 +292,19 @@
         574
     ],
     [
-        "Al-Muddaththir",
+        "Al-Muddathir",
         575
     ],
     [
-        "Al-Qiyaama",
+        "Al-Qiyamah",
         577
     ],
     [
-        "Al-Insaan",
+        "Al-Insan",
         578
     ],
     [
-        "Al-Mursalaat",
+        "Al-Mursalat",
         580
     ],
     [
@@ -312,11 +312,11 @@
         582
     ],
     [
-        "An-Naazi'aat",
+        "An-Nazi'at",
         583
     ],
     [
-        "Abasa",
+        "'Abasa",
         585
     ],
     [
@@ -324,7 +324,7 @@
         586
     ],
     [
-        "Al-Infitaar",
+        "Al-Infitar",
         587
     ],
     [
@@ -332,23 +332,23 @@
         587
     ],
     [
-        "Al-Inshiqaaq",
+        "Al-Inshiqaq",
         589
     ],
     [
-        "Al-Burooj",
+        "Al-Buruj",
         590
     ],
     [
-        "At-Taariq",
+        "At-Tariq",
         591
     ],
     [
-        "Al-A'laa",
+        "Al-A'la",
         591
     ],
     [
-        "Al-Ghaashiya",
+        "Al-Ghashiyah",
         592
     ],
     [
@@ -368,7 +368,7 @@
         595
     ],
     [
-        "Ad-Dhuhaa",
+        "Ad-Duha",
         596
     ],
     [
@@ -380,7 +380,7 @@
         597
     ],
     [
-        "Al-Alaq",
+        "Al-'Alaq",
         597
     ],
     [
@@ -388,31 +388,31 @@
         598
     ],
     [
-        "Al-Bayyina",
+        "Al-Bayyinah",
         598
     ],
     [
-        "Az-Zalzala",
+        "Az-Zalzalah",
         599
     ],
     [
-        "Al-Aadiyaat",
+        "Al-'Adiyat",
         599
     ],
     [
-        "Al-Qaari'a",
+        "Al-Qari'ah",
         600
     ],
     [
-        "At-Takaathur",
+        "At-Takathur",
         600
     ],
     [
-        "Al-Asr",
+        "Al-'Asr",
         601
     ],
     [
-        "Al-Humaza",
+        "Al-Humazah",
         601
     ],
     [
@@ -420,11 +420,11 @@
         601
     ],
     [
-        "Quraish",
+        "Quraysh",
         602
     ],
     [
-        "Al-Maa'un",
+        "Al-Ma'un",
         602
     ],
     [
@@ -432,7 +432,7 @@
         602
     ],
     [
-        "Al-Kaafiroon",
+        "Al-Kafirun",
         603
     ],
     [
@@ -444,15 +444,15 @@
         603
     ],
     [
-        "Al-Ikhlaas",
-        604
+        "Al-Ikhlas",
+        603
     ],
     [
         "Al-Falaq",
-        604
+        603
     ],
     [
-        "An-Naas",
-        604
+        "An-Nas",
+        603
     ]
 ]
