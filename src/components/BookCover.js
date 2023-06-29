@@ -26,7 +26,7 @@ const BookCover = () => {
     const [touchEnd, setTouchEnd] = useState(null)
 
     // the required distance between touchStart and touchEnd to be detected as a swipe
-    const minSwipeDistance = 50 
+    const minSwipeDistance = 30 
 
     const onTouchStart = (e) => {
       setTouchEnd(null) // otherwise the swipe is fired even with usual touch events
@@ -57,11 +57,11 @@ const BookCover = () => {
 
     return (
     <>
-      <div className="tisch h-full flex justify-center relative">
+      <div className="tisch h-full flex justify-center relative p-5 max-lg:p-0">
           <div className="mobile max-lg:hidden fixed w-1 left-20">        
             <TurnPage turnPage={"turn"} setPg={setPg} pg={pg}/>
           </div>
-          <div className="book bg-green-900 h-screen w-1/2 max-lg:w-full p-5 rounded-xl shadow-lg border-4 border-green-950" onTouchStart={onTouchStart} onTouchMove={onTouchMove} onTouchEnd={onTouchEnd}>
+          <div className="book bg-green-900 h-screen w-1/2 max-lg:w-full p-5 rounded-xl max-lg:rounded-none shadow-lg border-4 border-green-950" onTouchStart={onTouchStart} onTouchMove={onTouchMove} onTouchEnd={onTouchEnd}>
             
             <Book pg={pg} setPg={setPg} localStorage={useLocalStorage}/>
           
