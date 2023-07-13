@@ -6,7 +6,11 @@
   "categories": ["utilities", "books"],
   "scope": ".",
   "display": "standalone",
-  "display_override": "window-controls-overlay", 
+  "display_override": [
+    "window-controls-overlay",
+    "standalone",
+    "browser"
+  ], 
   "name": "Quran Reading Website",
   "icons": [
     {
