@@ -7,11 +7,11 @@ const filesToCache = [
 ];
 
 // the event handler for the activate event
-window.addEventListener('activate', e => window.clients.claim());
+self.addEventListener('activate', e => self.clients.claim());
 
 // the event handler for the install event 
 // typically used to cache assets
-window.addEventListener('install', e => {
+self.addEventListener('install', e => {
   e.waitUntil(
     caches.open(cacheName)
     .then(cache => cache.addAll(filesToCache))
@@ -20,7 +20,7 @@ window.addEventListener('install', e => {
 
 // the fetch event handler, to intercept requests and serve all 
 // static assets from the cache
-window.addEventListener('fetch', e => {
+self.addEventListener('fetch', e => {
   e.respondWith(
     caches.match(e.request)
     .then(response => response ? response : fetch(e.request))
