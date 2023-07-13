@@ -5,14 +5,13 @@ const cacheName = 'quran-cache';
 const filesToCache = [
   '/'
 ];
-const self = window;
 
 // the event handler for the activate event
-self.addEventListener('activate', e => self.clients.claim());
+window.addEventListener('activate', e => window.clients.claim());
 
 // the event handler for the install event 
 // typically used to cache assets
-self.addEventListener('install', e => {
+window.addEventListener('install', e => {
   e.waitUntil(
     caches.open(cacheName)
     .then(cache => cache.addAll(filesToCache))
@@ -21,7 +20,7 @@ self.addEventListener('install', e => {
 
 // the fetch event handler, to intercept requests and serve all 
 // static assets from the cache
-self.addEventListener('fetch', e => {
+window.addEventListener('fetch', e => {
   e.respondWith(
     caches.match(e.request)
     .then(response => response ? response : fetch(e.request))
