@@ -16,3 +16,4 @@ workbox.routing.registerRoute(
     cacheName: CACHE
   })
 );
+console.log("Service worker registered");
