@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.3e3a0f47.css",
-    "main.js": "/static/js/main.5b954031.js",
-    "static/media/font.ttf": "/static/media/font.8f9114b65b03620e5c16.ttf",
+    "main.css": "/static/css/main.8d027e9f.css",
+    "main.js": "/static/js/main.fe6f7f82.js",
+    "static/media/Naskh-Nastaleeq-IndoPak-QWBW.woff": "/static/media/Naskh-Nastaleeq-IndoPak-QWBW.8b349520aff0f46f49dc.woff",
     "static/media/image.svg": "/static/media/image.0ec4986c5c02482c4889.svg",
     "index.html": "/index.html",
-    "main.3e3a0f47.css.map": "/static/css/main.3e3a0f47.css.map",
-    "main.5b954031.js.map": "/static/js/main.5b954031.js.map"
+    "main.8d027e9f.css.map": "/static/css/main.8d027e9f.css.map",
+    "main.fe6f7f82.js.map": "/static/js/main.fe6f7f82.js.map"
   },
   "entrypoints": [
-    "static/css/main.3e3a0f47.css",
-    "static/js/main.5b954031.js"
+    "static/css/main.8d027e9f.css",
+    "static/js/main.fe6f7f82.js"
   ]
 }
