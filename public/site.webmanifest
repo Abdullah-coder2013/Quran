@@ -1,6 +1,11 @@
 {
   "short_name": "Quran",
+  "handle_links": "auto",
   "orientation": "any",
+  "id": "/",
+  "launch_handler": {
+    "client_mode": "auto"
+  },
   "description": "A Website for Reading the Quran.",
   "dir": "auto",
   "categories": ["utilities", "books"],
@@ -10,7 +15,36 @@
     "window-controls-overlay",
     "standalone",
     "browser"
-  ], 
+  ],
+  "edge_side_panel": {
+    "preferred_width": 450
+  },
+  "screenshots": [
+    {
+      "src":"./screenshots/1.png",
+      "sizes":"1859x899",
+      "type":"image/png",
+      "description":"cover page"
+    },
+    {
+      "src":"./screenshots/2.png",
+      "sizes":"957x900",
+      "type":"image/png",
+      "description":"toc page"
+    },
+    {
+      "src":"./screenshots/3.png",
+      "sizes":"956x900",
+      "type":"image/png",
+      "description":"surah start page"
+    },
+    {
+      "src":"./screenshots/4.png",
+      "sizes":"1813x897",
+      "type":"image/png",
+      "description":"overall look"
+    }
+  ],
   "name": "Quran Reading Website",
   "icons": [
     {
