@@ -6,6 +6,21 @@
   "launch_handler": {
     "client_mode": "auto"
   },
+  "prefer_related_applications": true,
+  "related_applications": [
+    {
+      "platform": "play",
+      "url": "https://play.google.com/store/apps/details",
+      "id": "com.quran.labs.androidquran"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Main",
+      "url": "https://read-quran.pages.dev/",
+      "description": "main site"
+    }
+  ],
   "description": "A Website for Reading the Quran.",
   "dir": "auto",
   "categories": ["utilities", "books"],
