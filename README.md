@@ -1,3 +1,5 @@
+<a href="https://read-quran.pages.dev"><img src="https://img.shields.io/badge/Go_to-Website-green"></a> <a href="https://github.com/quran/quran.com-api"><img src="https://img.shields.io/badge/Go_to-API-purple"></a> <a href="https://abdullah.abdulmunim.com"><img src="https://img.shields.io/badge/Go_to-My_Personal_Site-orange"></a>
+
 # Quran Reading Website 📖
 
 
