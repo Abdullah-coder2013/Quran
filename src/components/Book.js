@@ -56,7 +56,7 @@ function Book(props) {
                     <MobileTurnPage turnPage={"turn"} setPg={props.setPg} pg={props.pg}/>
                     <button onClick={() => props.setPg(-2)} className="w-1/6 p-2 hover:-translate-y-1 hover:scale-110 transition ease-in-out hover:text-green-800 font-bold">To Cover</button>          
                     <input type="number" className="w-1/6 p-2 border-0 outline-0 bg-slate-300 text-green-700" name="submit" onKeyDown={e => search(e)} placeholder="Search"/>
-                    <input className="w-1/6 p-2 border-0 outline-0 text-center bg-slate-300 text-green-700" type="text" value={props.pg+1} readOnly/>
+                    <input className="w-1/6 p-2 border-0 outline-0 text-center bg-slate-300 text-green-700 lilita" type="text" value={props.pg+1} readOnly/>
                     <button className="w-1/6 text-center p-2 hover:-translate-y-1 hover:scale-110 transition ease-in-out hover:text-green-800 font-bold" onClick={() => props.setPg(-1)}>Contents</button>          
                     <button onClick={setBookMark} className="w-1/6 p-2 hover:-translate-y-1 hover:scale-110 transition ease-in-out hover:text-green-800 font-bold">Bookmark</button>
                     <MobileTurnPage turnPage={"back"} setPg={props.setPg} pg={props.pg}/>
@@ -74,7 +74,7 @@ function Book(props) {
                 <div className="flex flex-start justify-center text-xl text-xss ntext">
                     <button onClick={() => props.setPg(-2)} className="w-1/4 p-2 text-left hover:-translate-y-1 hover:scale-110 transition ease-in-out hover:text-green-800 font-bold">To Cover</button>          
                     <input type="number" className="w-1/4 p-2 border-0 outline-0 bg-slate-300 text-green-700" name="submit" onKeyDown={e => search(e)} placeholder="Search"/>
-                    <input className="w-1/4 p-2 border-0 outline-0 text-center bg-slate-300 text-green-700" type="text" value={props.pg+1} readOnly/>
+                    <input className="w-1/4 p-2 border-0 outline-0 text-center bg-slate-300 text-green-700 lilita" type="text" value={props.pg+1} readOnly/>
                     <button className="w-1/4 text-center p-2 hover:-translate-y-1 hover:scale-110 transition ease-in-out hover:text-green-800 font-bold" onClick={() => props.setPg(-1)}>Contents</button>          
                     <button onClick={setBookMark} className="w-1/4 p-2 text-right hover:-translate-y-1 hover:scale-110 transition ease-in-out hover:text-green-800 font-bold">Bookmark</button>
                 </div>
