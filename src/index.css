@@ -1,6 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Lilita+One&family=Martian+Mono&family=Poppins&display=swap');
+
 * {
   box-sizing: border-box;
 }
@@ -8,6 +10,18 @@
 @font-face {
   font-family: "IndoPak";
   src: url("../public/fonts/Naskh-Nastaleeq-IndoPak-QWBW.woff") format("truetype");
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../public/fonts/poppins.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Lilita";
+  src: url("../public/fonts/lilita.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Merri";
+  src: url("../public/fonts/merriweather.woff2") format("woff2");
 }
 /* 
 body {
@@ -82,8 +96,11 @@ input::-webkit-inner-spin-button {
   font-family: "IndoPak", sans-serif;
 }
 .surah {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: "Poppins";
   font-size: xx-large;
+}
+.lilita {
+  font-family: "Lilita";
 }
 
 .contents {
@@ -104,6 +121,12 @@ input::-webkit-inner-spin-button {
 }
 .ltrs {
   text-align: ltr;
+}
+.ntext {
+  font-family: "Poppins", sans-serif;
+}
+.title {
+  font-family: "Merri", sans-serif;
 }
 @media not all and (min-width: 1280px) {
   .text-xss {
