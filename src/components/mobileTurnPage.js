@@ -19,6 +19,6 @@ const MobileTurnPage = (props) => {
           </svg></button>
         )
     }
-
+    return null;
 }
 export default MobileTurnPage;

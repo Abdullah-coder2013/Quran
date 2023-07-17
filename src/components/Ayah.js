@@ -1,13 +1,13 @@
 const Ayah = (props) => {
     
     if (props.page[props.index][1].includes("بِسۡمِ اللهِ الرَّحۡمٰنِ الرَّحِيۡمِ")) {
-        let entryString = "بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ";
-        let entryArray = entryString.split(" ");
-        let letter = entryArray.splice(3 + 1, entryArray.length - (3 + 1) );
+        const entryString = "بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ";
+        const entryArray = entryString.split(" ");
+        const letter = entryArray.splice(3 + 1, entryArray.length - (3 + 1) );
         if (letter[0] === "ٱلرَّحِيمِ") {
             entryArray.push(letter);
         }
-        let letterstogether = letter.join(" ");
+        const letterstogether = letter.join(" ");
         const generateFirstAyah = () => {
             if (letterstogether === "") {
                 return "";

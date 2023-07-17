@@ -56,7 +56,7 @@ const BookCover = () => {
     
 
     return (
-    <>
+    
       <div className="tisch h-full flex justify-center relative p-5 max-lg:p-0">
           <div className="mobile max-lg:hidden fixed w-1 left-20">        
             <TurnPage turnPage={"turn"} setPg={setPg} pg={pg}/>
@@ -70,7 +70,6 @@ const BookCover = () => {
             <TurnPage turnPage={"back"} setPg={setPg} pg={pg}/>
           </div>
       </div>
-    </>
     )
 }
 export default BookCover;
