@@ -12,8 +12,6 @@ for i in range(604):
     for ayah in data["data"]["ayahs"]:
         ayahs.append([ayah["numberInSurah"],ayah["text"],ayah["surah"]["name"],ayah["page"]])
     pageayahs.append(ayahs)
-    # for ayah in pageayahs:
-    #     totalayahs.append(ayah)
     print(pageayahs)
     for ayah in pageayahs:
         with open(f"models/page-{i}.json", mode="w", encoding="utf-8") as f:

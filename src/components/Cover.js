@@ -9,7 +9,7 @@ const Cover = (props) => {
     }
     
     
-        const clearLocalStorage = (event) => {
+        const clearLocalStorage = () => {
             console.log("clear button clicked");
             // localStorage.clear();
             localStorage.removeItem("bookmark");

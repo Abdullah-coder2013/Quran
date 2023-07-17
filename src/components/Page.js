@@ -18,7 +18,7 @@ function Page(props) {
     const page = require("../models/page-" + props.pg);
     const generateAyahs = () => {
         return page.map((item, index) => {
-            return <Ayah page={page} index={index} number={page[index][0]}/>;
+            return <Ayah page={page} index={index} number={page[index][0]} key={index}/>;
         });
     }
     if (props.pg === 0 || props.pg === 1) {

@@ -1,8 +1,8 @@
 const MobileTurnPage = (props) => {
-    const turnPage = (event) => {
+    const turnPage = () => {
         props.setPg(props.pg+1);
     }
-    const backPage = (event) => {
+    const backPage = () => {
         props.setPg(props.pg-1);
     }
     if (props.turnPage === "turn" && props.pg < 604) {

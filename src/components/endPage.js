@@ -1,4 +1,4 @@
-const Endpage = (props) => {
+const Endpage = () => {
     return (
         <>
             <div>

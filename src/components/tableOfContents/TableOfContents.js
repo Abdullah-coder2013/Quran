@@ -3,7 +3,7 @@ const TableOfContents = (props) => {
     const tableOfContents = require("./contents.json");
     const genContent = () => {
         return tableOfContents.map((item, index) => {
-            return <Content contents={item} index={index} setPg={props.setPg}/>
+            return <Content key={index} contents={item} index={index} setPg={props.setPg}/>
         })
     }
     return (

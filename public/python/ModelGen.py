@@ -4,7 +4,6 @@ import json
 totalayahs = []
 
 for i in range(604):
-# print(i)
     url = f"https://api.quran.com/api/v4/quran/verses/indopak?page_number={i+1}"
     response = requests.get(url)
     data = response.json()
