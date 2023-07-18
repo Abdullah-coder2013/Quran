@@ -28,8 +28,8 @@ function Book(props) {
     }
     if (props.pg === 604) {
         return (
-            <div className="tran w-full items-center bg-slate-300 text-5xl max-lg:text-3xl text-right p-4 pb-8 rounded border-4 border-slate-400 shadow-lg">
-                <Endpage/>
+            <div className="tran">
+                <Endpage setPg={props.setPg} search={search}/>
             </div>
         )
     }

@@ -1,7 +1,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Lilita+One&family=Martian+Mono&family=Poppins&display=swap');
 
 * {
   box-sizing: border-box;
@@ -9,7 +8,7 @@
 
 @font-face {
   font-family: "IndoPak";
-  src: url("../public/fonts/Naskh-Nastaleeq-IndoPak-QWBW.woff") format("truetype");
+  src: url("../public/fonts/Naskh-Nastaleeq-IndoPak-QWBW.woff") format("woff");
 }
 @font-face {
   font-family: "Poppins";
@@ -22,6 +21,10 @@
 @font-face {
   font-family: "Merri";
   src: url("../public/fonts/merriweather.woff2") format("woff2");
+}
+@font-face {
+  font-family: "AD";
+  src: url("../public/fonts/ArchitectsDaughter-Regular.woff2") format("woff2");
 }
 /* 
 body {
@@ -132,7 +135,7 @@ input::-webkit-inner-spin-button {
   font-family: "Poppins", sans-serif;
 }
 .title {
-  font-family: "Architects Daughter", sans-serif;
+  font-family: "AD", sans-serif;
 }
 @media not all and (min-width: 1280px) {
   .text-xss {
