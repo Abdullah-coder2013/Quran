@@ -12,13 +12,17 @@
 
 ## Anouncements 📢
 
-The active github pages *will not* be updated.
+The active github pages **will not** be updated.
 The website has switched to cloudflare pages and will be updated insh'allah.
 
 Active website is available at: https://read-quran.pages.dev/
 ## About 
 
-This is a website of reading the Quran.
+This is a website of reading the Quran page by page and surah by surah.
+It is not just any Quran app, it is like reading the book digitaly.
+I had this idea when I was looking for Quran apps like this one.
+Unfortunately I couldn't find any, so I thought: "Maybe I can make one"
+And then, the development started.
 
 ## Contribute
 
