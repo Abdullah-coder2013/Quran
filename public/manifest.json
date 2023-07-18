@@ -1,18 +1,72 @@
 {
   "short_name": "Quran",
+  "handle_links": "auto",
   "orientation": "any",
+  "id": "/",
+  "launch_handler": {
+    "client_mode": "auto"
+  },
+  "prefer_related_applications": true,
+  "related_applications": [
+    {
+      "platform": "play",
+      "url": "https://play.google.com/store/apps/details",
+      "id": "com.quran.labs.androidquran"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Main",
+      "url": "https://read-quran.pages.dev/",
+      "description": "main site"
+    }
+  ],
   "description": "A Website for Reading the Quran.",
   "dir": "auto",
   "categories": ["utilities", "books"],
   "scope": ".",
   "display": "standalone",
-  "display_override": "window-controls-overlay", 
+  "display_override": [
+    "window-controls-overlay",
+    "standalone",
+    "browser"
+  ],
+  "edge_side_panel": {
+    "preferred_width": 450
+  },
+  "screenshots": [
+    {
+      "src":"./screenshots/1.png",
+      "sizes":"1859x899",
+      "type":"image/png",
+      "description":"cover page"
+    },
+    {
+      "src":"./screenshots/2.png",
+      "sizes":"957x900",
+      "type":"image/png",
+      "description":"toc page"
+    },
+    {
+      "src":"./screenshots/3.png",
+      "sizes":"956x900",
+      "type":"image/png",
+      "description":"surah start page"
+    },
+    {
+      "src":"./screenshots/4.png",
+      "sizes":"1813x897",
+      "type":"image/png",
+      "description":"overall look"
+    }
+  ],
   "name": "Quran Reading Website",
   "icons": [
     {
       "src": "./favicon.ico",
       "sizes": "16x16",
-      "type": "image/x-icon"
+      "type": "image/x-icon",
+      "purpose": "any"
     },
     {
       "src": "./favicon-16x16.png",
@@ -23,6 +77,12 @@
       "src": "./favicon-32x32.png",
       "sizes": "32x32",
       "type": "image/png"
+    },
+    {
+      "src": "./mask.png",
+      "type": "image/png",
+      "sizes": "730x730",
+      "purpose": "maskable"
     },
     {
       "src": "./android_chrome_192x192.png",
@@ -38,11 +98,6 @@
       "src": "./apple-touch-icon.png",
       "type": "image/png",
       "sizes": "180x180"
-    },
-    {
-      "src": "/android-chrome-384x384.png",
-      "sizes": "384x384",
-      "type": "image/png"
     },
     {
       "src": "windows11/SmallTile.scale-100.png",
@@ -495,5 +550,5 @@
   ],
   "start_url": ".",
   "theme_color": "#000000",
-  "background_color": "#ffd887"
+  "background_color": "#623d05"
 }
