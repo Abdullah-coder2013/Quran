@@ -44,7 +44,7 @@ const BookCover = () => {
         if (isLeftSwipe && pg !== -2) {
           setPg(pg - 1)
         }
-        if (isRightSwipe && pg !== 603) {
+        if (isRightSwipe && pg !== 604) {
           setPg(pg + 1)
         }
       }
