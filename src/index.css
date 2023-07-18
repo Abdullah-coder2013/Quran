@@ -35,6 +35,12 @@ body {
   animation-duration: 4s;
   animation-name: "transition";
 }
+.ghub {
+  display: inline;
+  vertical-align: auto;
+  margin: 2px;
+  margin-bottom: 3px;
+}
 
 .book {
   height: 100%;
