@@ -21,7 +21,7 @@
       "description": "main site"
     }
   ],
-  "description": "A Website for Reading the Quran.",
+  "description": "A Website for Reading the Quran online and offline on the website! Has features like: full page works offline, feeling like a book, and more!",
   "dir": "auto",
   "categories": ["utilities", "books"],
   "scope": ".",
