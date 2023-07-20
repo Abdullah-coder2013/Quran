@@ -61,7 +61,7 @@ const BookCover = () => {
           <div className="mobile max-lg:hidden fixed w-1 left-20">        
             <TurnPage turnPage={"turn"} setPg={setPg} pg={pg}/>
           </div>
-          <div className="book bg-green-900 h-screen w-1/2 max-lg:w-full p-5 rounded-xl max-lg:rounded-none shadow-lg border-4 border-green-950" onTouchStart={onTouchStart} onTouchMove={onTouchMove} onTouchEnd={onTouchEnd}>
+          <div className="book bg-green-900 h-screen w-1/2 max-lg:w-full p-5 max-lg:p-2 rounded-xl max-lg:rounded-none shadow-lg border-4 border-green-950" onTouchStart={onTouchStart} onTouchMove={onTouchMove} onTouchEnd={onTouchEnd}>
             
             <Book pg={pg} setPg={setPg} localStorage={useLocalStorage}/>
           
