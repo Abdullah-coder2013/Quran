@@ -5,7 +5,7 @@ import './index.css';
 import App from './App';
 
 if (typeof navigator.serviceWorker !== 'undefined') {
-  navigator.serviceWorker.register('/service-worker.js');
+  navigator.serviceWorker.register('/sw.js');
 }
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
