@@ -26,6 +26,9 @@ const Cover = (props) => {
             
         }
     }
+    const gotosettings = () => {
+        return props.setPg(-3);
+    }
     return (
         <div className="cover bg-green-900 p-5 rounded-xl shadow-lg flex justify-center flex-col h-3/4 border-4 border-green-950">
             <h1 className="title font-bold text-9xl max-lg:text-8xl text-center text-yellow-300">Quran</h1>
@@ -34,6 +37,7 @@ const Cover = (props) => {
             <h5 className="text-center text-xl text-yellow-700 ntext">Text from <a className='underline' href="https://www.quran.com/">Quran.com</a> API</h5>
             <div className="flex justify-center flex-col mt-14">
                 <button type="button" onClick={Start} className=" border-4 mt-1 border-yellow-900 bg-yellow-600 duration-150 hover:text-slate-800 hover:bg-yellow-300 hover:-translate-y-1 hover:scale-110 transition ease-in-out p-2 rounded-md text-center text-slate-200 text-xl font-bold active:bg-yellow-400 ntext">Start Reading</button>
+                <button type="button" onClick={gotosettings} className=" border-4 mt-1 border-yellow-900 bg-yellow-600 duration-150 hover:text-slate-800 hover:bg-yellow-300 hover:-translate-y-1 hover:scale-110 transition ease-in-out p-2 rounded-md text-center text-slate-200 text-xl font-bold active:bg-yellow-400 ntext">Settings</button>
                 <button type="button" onClick={StartFromTOB} className=" border-4 mt-1 border-yellow-900 bg-yellow-600 duration-150 hover:text-slate-800 hover:bg-yellow-300 hover:-translate-y-1 hover:scale-110 transition ease-in-out p-2 rounded-md text-center text-slate-200 text-xl font-bold active:bg-yellow-400 ntext">Table Of Contents</button>
                 <button type="button" onClick={Bookmark} className=" border-4 mt-1 border-yellow-900 bg-yellow-600 duration-150 hover:text-slate-800 hover:bg-yellow-300 hover:-translate-y-1 hover:scale-110 transition ease-in-out p-2 rounded-md text-center text-slate-200 text-xl font-bold active:bg-yellow-400 ntext">Read From Bookmark</button>
                 <button type="button" onClick={clearLocalStorage} className=" border-4 mt-1 border-yellow-900 bg-yellow-600 duration-150 hover:text-slate-800 hover:bg-yellow-300 hover:-translate-y-1 hover:scale-110 transition ease-in-out p-2 rounded-md text-center text-slate-200 text-xl font-bold active:bg-yellow-400 ntext">Clear Bookmarks</button>

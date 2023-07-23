@@ -1,5 +1,4 @@
 import Ayah from "./Ayah";
-import Cover from "./Cover";
 function Page(props) {
     if (props.pg < -1 || props.pg > 605) {
         return (
@@ -8,34 +7,50 @@ function Page(props) {
             </div>
         )
     }
-    else if (props.pg === -1) {
+    let page = null
+    if (props.localStorage.getItem("quranFont") === "indopak") {
+        page = require(`../models/indopak/page-${props.pg}.json`);
+        const generateAyahs = () => {
+            return page.map((item, index) => {
+                return <Ayah page={page} option="indopak" index={index} number={page[index][0]} key={index}/>;
+            });
+        }
         return (
-            <div>
-                <Cover />
-            </div>
-        )
-    }
-    const page = require("../models/page-" + props.pg);
-    const generateAyahs = () => {
-        return page.map((item, index) => {
-            return <Ayah page={page} index={index} number={page[index][0]} key={index}/>;
-        });
-    }
-    if (props.pg === 0 || props.pg === 1) {
-        return (
-            <div className="ayahs transition ease-in-out duration-300 ayah p-90 wideletters leading-loose">
+            <div className="indopak transition ease-in-out duration-300 ayah p-90 wideletters leading-loose">
                 {generateAyahs()}
-                <br/>
-                <br/>
-                <br/>
-                <br/>
             </div>
         )
     }
-    return (
-        <div className="ayahs transition ease-in-out duration-300 ayah p-90 wideletters leading-loose">
-            {generateAyahs()}
-        </div>
-    )
+    else if (props.localStorage.getItem("quranFont") === "uthmani") {
+        page = require(`../models/uthmani/page-${props.pg}.json`);
+        const generateAyahs = () => {
+            return page.map((item, index) => {
+                return <Ayah page={page} option="uthmani" index={index} number={page[index][0]} key={index}/>;
+            });
+        }
+        return (
+            <div className="uthmani transition ease-in-out duration-300 ayah p-90 wideletters leading-loose">
+                {generateAyahs()}
+            </div>
+        )
+    }
+    else {
+        page = require(`../models/indopak/page-${props.pg}.json`);
+
+        const generateAyahs = () => {
+            return page.map((item, index) => {
+                return <Ayah page={page} option="indopak" index={index} number={page[index][0]} key={index}/>;
+            });
+        }
+        return (
+            <div className="indopak transition ease-in-out duration-300 ayah p-90 wideletters leading-loose">
+                {generateAyahs()}
+            </div>
+        )
+    }
+        
+
+    
+    
 }
 export default Page;

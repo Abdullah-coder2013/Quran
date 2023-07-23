@@ -26,6 +26,16 @@
   font-family: "AD";
   src: url("../public/fonts/ArchitectsDaughter-Regular.woff2") format("woff2");
 }
+@font-face {
+  font-family: "uthmani";
+  src: url("../public/fonts/uthmani.woff2") format("woff2");
+}
+.selection {
+  -webkit-appearance: none;
+}
+.save {
+  direction: rtl;
+}
 /* 
 body {
   margin: 0;
@@ -48,10 +58,14 @@ body {
 .book {
   height: 100%;
 }
-.ayahs {
+.indopak {
   font-family: "IndoPak", sans-serif;
   direction: rtl;
   
+}
+.uthmani {
+  font-family: "uthmani", sans-serif;
+  direction: rtl;
 }
 .tran {
   animation-name: transition;

@@ -1,5 +1,6 @@
 import Page from "./Page";
 import Cover from "./Cover";
+import SettingsPage from "./settings";
 import TableOfContents from "./tableOfContents/TableOfContents";
 import swal from 'sweetalert'
 import MobileTurnPage from "./mobileTurnPage";
@@ -23,6 +24,13 @@ function Book(props) {
         return (
             <div>
                 <Cover setPg={props.setPg} bookmark={localStorage.getItem("bookmark")}/>
+            </div>
+        )
+    }
+    if (props.pg === -3){
+        return (
+            <div className="tran w-full items-center bg-slate-300 text-5xl max-lg:text-3xl text-right p-4 pb-8 rounded border-4 border-slate-400 shadow-lg">
+                <SettingsPage localStorage={localStorage}/>
             </div>
         )
     }
@@ -62,7 +70,7 @@ function Book(props) {
                     <MobileTurnPage turnPage={"back"} setPg={props.setPg} pg={props.pg}/>
                 </div>
     
-                <Page pg={props.pg} />
+                <Page pg={props.pg} localStorage={localStorage}/>
             </div>
         );
     }
@@ -79,7 +87,7 @@ function Book(props) {
                     <button onClick={setBookMark} className="w-1/4 p-2 text-right hover:-translate-y-1 hover:scale-110 transition ease-in-out hover:text-green-800 font-bold">Bookmark</button>
                 </div>
     
-                <Page pg={props.pg} />
+                <Page pg={props.pg} localStorage={localStorage} />
             </div>
         );
     }
