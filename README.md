@@ -1,6 +1,13 @@
-# Quran Reading Website 
+<p align="center">
+  <img src="/public/apple-touch-icon.png"/>
+</p>
+<h1 align="center">Quran Reading Website</h1>
 
-<a href="https://read-quran.pages.dev"><img src="https://img.shields.io/badge/Go_to-Website-green"></a> <a href="https://github.com/quran/quran.com-api"><img src="https://img.shields.io/badge/Go_to-API-purple"></a> <a href="https://abdullah.abdulmunim.com"><img src="https://img.shields.io/badge/Go_to-My_Personal_Site-orange"></a> [![DeepSource](https://app.deepsource.com/gh/Abdullah-coder2013/Quran.svg/?label=resolved+issues&show_trend=true&token=SyNYYd0As72tadjQDZPP-AMJ)](https://app.deepsource.com/gh/Abdullah-coder2013/Quran/?ref=repository-badge) <a href="https://docs.github.com/en/code-security/dependabot/dependabot-security-updates/configuring-dependabot-security-updates"><img src="https://camo.githubusercontent.com/7f4aec020ec1dccb8ae5c9479116a9a403ce460ee1674a4379dea2cbc11962ff/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f446570656e6461626f742d656e61626c65642d626c75652e737667"/></a>
+<p align="center">
+<a href="https://read-quran.pages.dev"><img src="https://img.shields.io/badge/Go_to-Website-green"></a> <a href="https://github.com/quran/quran.com-api"><img src="https://img.shields.io/badge/Go_to-API-purple"></a> <a href="https://abdullah.abdulmunim.com"><img src="https://img.shields.io/badge/Go_to-My_Personal_Site-orange"></a><a href="https://app.deepsource.com/gh/Abdullah-coder2013/Quran/?ref=repository-badge"> <img src="https://app.deepsource.com/gh/Abdullah-coder2013/Quran.svg/?label=resolved+issues&show_trend=true&token=SyNYYd0As72tadjQDZPP-AMJ"/></a> <a href="https://docs.github.com/en/code-security/dependabot/dependabot-security-updates/configuring-dependabot-security-updates"><img src="https://camo.githubusercontent.com/7f4aec020ec1dccb8ae5c9479116a9a403ce460ee1674a4379dea2cbc11962ff/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f446570656e6461626f742d656e61626c65642d626c75652e737667"/>
+</a>
+  <a href="https://github.com/Abdullah-coder2013/Quran"><img src="https://img.shields.io/badge/Latest_Version-v3.2-red"></a>
+</p>
 
 <img src="/public/images/image.png">
 <!--<img src="/public/screenshots/1.png">
