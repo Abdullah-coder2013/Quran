@@ -11,6 +11,10 @@
   src: url("../public/fonts/Naskh-Nastaleeq-IndoPak-QWBW.woff") format("woff");
 }
 @font-face {
+  font-family: "nerd";
+  src: url("../public/fonts/nerd.ttf") format("truetype");
+}
+@font-face {
   font-family: "Poppins";
   src: url("../public/fonts/poppins.woff2") format("woff2");
 }
@@ -66,6 +70,9 @@ body {
 .uthmani {
   font-family: "uthmani", sans-serif;
   direction: rtl;
+}
+.nerdy {
+  font-family: "nerd";
 }
 .tran {
   animation-name: transition;
