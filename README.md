@@ -1,4 +1,4 @@
-<p align="center">
+ <p align="center">
   <img src="/public/apple-touch-icon.png"/>
 </p>
 <h1 align="center">Quran Reading Website</h1>
@@ -16,37 +16,58 @@
 <img src="/public/screenshots/4.png">--!>
 
 
-> ## Anouncements 📢
+## Anouncements 📢
 
 The active github pages **will not** be updated.<br/>
 The website has switched to cloudflare pages and will be updated insh'allah.<br/>
 <br/>
 Active website is available at: https://read-quran.pages.dev/<br/>
-> ## About 
 
-This is a website of reading the Quran page by page and surah by surah.<br/>
-It is not just any Quran app, it is like reading the book digitaly.<br/>
-I had this idea when I was looking for Quran apps like this one.<br/>
-Unfortunately I couldn't find any, so I thought: "Maybe I can make one"<br/>
-And then, the development started.<br/>
+## Installation
 
-> ## Contribute
+You cannnot really install this, but you can run it locally. Here are the steps to do so:
 
-If you want to support, please star/fork this repo!<br/>
-And if you want to make a pull request please feel free to do so!<br/>
+First you should have `Node` and `npm`
+installed. You can go to [the Node website](https://nodejs.org)
+
+Then clone the repo:
+```bash
+git clone https://github.com/Abdullah-coder2013/Quran.git
+```
+Go inside the cloned folder and run:
+```
+npm i react tailwindcss
+```
+Then run ```npm start```
+## About 
+
+This website is made to help people read the Quran online and with caches, offline. Cache size is also really small of about 3.5 MB
+
+## Dependencies
+
+- **Tailwind CSS**
+- **React**
+
+## Features
+
+- Works fully offline after opening it during WiFi.
+- Feels like a book
+- Stores Bookmarks
+- Can use Indopak and Uthmani scripts
+
+
+## Contribute
+
+If you cannot write code but still want to contribute, please star this repo!
+
+If you want to add a feature please make a pull request! Our Goal is to make this website as productive as possible.
+
 Please see the the [CODE OF CONDUCT](https://github.com/Abdullah-coder2013/Quran/blob/main/CODE_OF_CONDUCT.md)<br/>
 And also the [CONTRIBUTING GUIDELINES](https://github.com/Abdullah-coder2013/Quran/blob/main/CONTRIBUTING.md)
 
-> ## Issues
+## Issues
 
-If you find an issue/feature request please report it.<br/>
-Please see if there are already issues that help your problem.
+First, if you face an issue, see if there are already open issues that match your problem. If not, feel free to make an issue with coresponding tags and 
 
-> ## Possible with the help 😁 of:
-
-- **Quran.com API**: for generating the page models
-- **Tailwind CSS**: for styling the Website
-- **React**: for powering the website
-<br/>
 
 ## Thanks to everyone who has checked this app out and/or contributed!
