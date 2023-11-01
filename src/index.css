@@ -116,6 +116,11 @@ input::-webkit-inner-spin-button {
   margin-top: 15px;
 }
 
+.footerHR {
+  border-top: 3px solid #94A8B8;
+  margin-top: 15px;
+}
+
 .turnm {
   margin-right: 50rem;
 }

@@ -61,16 +61,19 @@ function Book(props) {
             <div className="w-full items-center bg-slate-300 text-5xl max-lg:text-3xl text-right p-4 pb-8 rounded border-4 border-slate-400 shadow-lg">
                 
                 <div className="flex flex-start justify-center text-xl text-xss ntext">
-                    <MobileTurnPage turnPage={"turn"} setPg={props.setPg} pg={props.pg}/>
                     <button onClick={() => props.setPg(-2)} className="w-1/6 p-2 hover:-translate-y-1 hover:scale-110 transition ease-in-out hover:text-green-800 font-bold">To Cover</button>          
                     <input type="number" className="w-1/4 p-2 border-0 outline-0 bg-slate-300 text-green-700 nerdy font-bold" name="submit" onKeyDown={e => search(e)} placeholder="󰍉 Search"/>
                     <input className="w-1/6 p-2 border-0 outline-0 text-center bg-slate-300 text-green-700 lilita" type="text" value={props.pg+1} readOnly/>
                     <button className="w-1/6 text-center p-2 hover:-translate-y-1 hover:scale-110 transition ease-in-out hover:text-green-800 font-bold" onClick={() => props.setPg(-1)}>Contents</button>          
                     <button onClick={setBookMark} className="w-1/6 p-2 hover:-translate-y-1 hover:scale-110 transition ease-in-out hover:text-green-800 font-bold">Bookmark</button>
-                    <MobileTurnPage turnPage={"back"} setPg={props.setPg} pg={props.pg}/>
                 </div>
     
                 <Page pg={props.pg} localStorage={localStorage}/>
+                <hr className="footerHR border-slate-300"/>
+                <div className="flex flex-start justify-between text-xl text-xss ntext">
+                    <MobileTurnPage turnPage={"turn"} setPg={props.setPg} pg={props.pg}/>
+                    <MobileTurnPage turnPage={"back"} setPg={props.setPg} pg={props.pg}/>
+                </div>
             </div>
         );
     }
